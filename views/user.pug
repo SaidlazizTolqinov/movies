@@ -1,0 +1,12 @@
+include header 
+include navbar 
+body 
+h1.text-center.mt-5.text-success= h1
+form.p-4.mt-3(method='POST' style="width: 30%; margin:auto; border: 1px solid #c7c7c7; border-radius: 7px")
+  .mb-3
+    label.form-label(for='exampleInputEmail1') Username
+    input#exampleInputEmail1.form-control(type='text' name="username")
+  .mb-3
+    label.form-label(for='exampleInputPassword1') Password
+    input#exampleInputPassword1.form-control(type='password' name="password")
+  button.btn.btn-primary.d-block.m-auto.w-100(type='submit') Connect

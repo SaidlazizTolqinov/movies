@@ -8,13 +8,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-dark
         li.nav-item
           a.nav-link.active.text-muted.hover(aria-current='page' href='/') Home
         li.nav-item
-          a.nav-link.active.text-muted.hover(href='/api/movies') Add Movies
+          a.nav-link.active.text-muted.hover(href='/api/addMovie') Add Movies
         li.nav-item
-          a.nav-link.active.text-muted.hover(href='/') Movies
+          a.nav-link.active.text-muted.hover(href='/api/movies') Movies
         li.nav-item
           a.nav-link.active.text-muted.hover(href='/') Directors
       form.d-flex
         input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
         button.btn.btn-outline-success.mx-2(type='submit') Search
-        button.btn.btn-success.mx-2(type='submit') Login
-        button.btn.btn-primary.mx-2(type='submit') Sign
+        a.btn.btn-success.mx-2(type='btn' href="/register") Login
+        a.btn.btn-primary.mx-2(type='btn' href="/authenticate") Sign

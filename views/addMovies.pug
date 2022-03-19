@@ -1,0 +1,26 @@
+include header 
+include navbar 
+.container
+    form.my-5(method="POST")
+        .mb-3
+            label.form-label(for='exampleInputEmail1') Title
+            input#exampleInputEmail1.form-control(type='text' name="title")
+        .mb-3
+            label.form-label(for='exampleInputPassword1') Category
+            input#exampleInputPassword1.form-control(type='text' name="category")
+        .mb-3
+            label.form-label(for='exampleInputPassword1') Country
+            input#exampleInputPassword2.form-control(type='text'  name="country")
+        .mb-3
+            label.form-label(for='exampleInputPassword1' ) Year
+            input#exampleInputPassword3.form-control(type='number' name="year")
+        .mb-3
+            label.form-label(for='exampleInputPassword1') Score
+            input#exampleInputPassword4.form-control(type='text' name="imdb_score")
+        .mb-3
+            label.form-label(for='exampleInputPassword1') Views
+            input#exampleInputPassword4.form-control(type='number' name="views")
+        .mb-3
+            label.form-label(for='exampleInputPassword1') Choose photo
+            input#exampleInputPassword5.form-control(type='file' name="img")
+        button.btn.btn-primary(type='submit') Submit

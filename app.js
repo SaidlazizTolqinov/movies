@@ -5,8 +5,9 @@ const bodyParser = require("body-parser")
 const path = require("path")
 const port = process.env.PORT || '3000'
 const rCinema = require("./routers/movie")
+const rAddCinema = require("./routers/addMovie")
 // const rDirector = require("./routers/director")
-// const rUser = require("./routers/user")
+const rUser = require("./routers/user")
 const rIndex = require("./routers/index")
 
 
@@ -24,8 +25,9 @@ app.use(express.static(path.join(__dirname , "public")))
 
 app.use(rIndex)
 app.use(rCinema)
+app.use(rAddCinema)
 // app.use(rDirector)
-// app.use(rUser)
+app.use(rUser)
 
 
 

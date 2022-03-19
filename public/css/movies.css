@@ -1,0 +1,24 @@
+
+
+body {
+    background-color: #3e4450;
+}
+
+.li {
+    border-bottom: 1px solid #4e99fc !important;
+    font-size: 20px;
+    color: #416af0;
+    transition: 0.3s ease;
+    /* color: #c7c7c7; */
+}
+
+.li:hover {
+    background-color: #3e4450;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #272533;
+    box-shadow: 0 0 10px rgb(114, 119, 148) inset;
+    color: white;
+}

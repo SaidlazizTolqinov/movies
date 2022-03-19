@@ -1,0 +1,34 @@
+include header 
+link(rel="stylesheet", href="/css/movies.css")
+include navbar 
+body 
+.container.mt-5.mx-auto(style="width: 60%")
+  each db, i in  data 
+   .card(style="width: 100%; height: 350px").mx-auto.my-5.p-2
+      .row
+        .col-4(style="height: 100%")
+          img.card-img-top.rounded.border(src=db.img alt='...' , style="width: 100%;height: 330px")
+        .col-8
+          ul.list-group.list-group-flush
+            li.list-group-item.li|🎞           
+              span= db.title
+            li.list-group-item.li|🎪 
+              span= db.category
+            li.list-group-item.li|🏳‍🌈 
+              span= db.country
+            li.list-group-item.li|📈 
+              span= db.imdb_score
+          .card-body
+           .row 
+             .col-md-3
+               span 📢 
+               span= db.views
+             .col-md-3
+              a(href="/add"+db.id) 
+               ion-icon(name="settings-outline")
+             .col-md-2 
+              a(href="/add/del"+db.id) 
+               ion-icon(name="trash-outline")
+             .col-md-4
+                span 🗓 
+                  span= db.year
