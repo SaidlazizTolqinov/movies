@@ -9,6 +9,7 @@ const rAddCinema = require("./routers/addMovie")
 // const rDirector = require("./routers/director")
 const rUser = require("./routers/user")
 const rIndex = require("./routers/index")
+const rMidWare = require("./helper/error")
 
 
 mongoose.connect("mongodb://localhost:27017/movies_web")
@@ -28,7 +29,7 @@ app.use(rCinema)
 app.use(rAddCinema)
 // app.use(rDirector)
 app.use(rUser)
-
+app.use(rMidWare)
 
 
 app.listen(port, () => console.log("server running"))
